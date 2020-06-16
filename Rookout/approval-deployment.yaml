@@ -55,7 +55,9 @@ spec:
         - name: ROLE
           value: approval
         - name: APPDYNAMICS_AGENT_NODE_NAME
-          value: Approval-Service
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
         - name: APPD_ANALYTICS_MONITOR
           value: "true"
         - name: APPD_DOCKER_VISIBILITY
