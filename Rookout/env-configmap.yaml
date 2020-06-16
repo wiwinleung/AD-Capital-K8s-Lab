@@ -2,22 +2,22 @@
 apiVersion: v1
 data:
   APPD_DIR: /appdynamics
-  APPD_ES_HOST: "<events-service-url>"
+  APPD_ES_HOST: "https://analytics.api.appdynamics.com"
   APPD_ES_PORT: "9080"
   APPD_ES_SSL: "false"
-  APPD_EVENT_ACCOUNT_NAME: "<your-global-account-name>"
-  APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: "<controller-access-key>"
-  APPDYNAMICS_AGENT_ACCOUNT_NAME: <controller-customer-name>
-  APPDYNAMICS_AGENT_APPLICATION_NAME: "<your-application-name>"
-  APPDYNAMICS_CONTROLLER_HOST_NAME: "<controller-host>"
+  APPD_EVENT_ACCOUNT_NAME: "customer1_f1d654a0-2661-4c98-88a7-ecb5bf4e28d5"
+  APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: ""
+  APPDYNAMICS_AGENT_ACCOUNT_NAME: ""
+  APPDYNAMICS_AGENT_APPLICATION_NAME: "AD-Capital-SE-Days"
+  APPDYNAMICS_CONTROLLER_HOST_NAME: "controller2060wiwin-20-n1eyc9cn.appd-sales.com"
   APPDYNAMICS_CONTROLLER_PORT: "8090"
   APPDYNAMICS_CONTROLLER_SSL_ENABLED: "False"
   APPDYNAMICS_NETVIZ_AGENT_PORT: "3892"
-  ROOKOUT_LABELS: "env:<rookout-label>"
+  ROOKOUT_LABELS: "env:wiwin-se-days"
   ROOKOUT_LOG_TO_STDERR: "True"
   ROOKOUT_DEBUG: "1"
   ROOKOUT_COMMIT: "True"
-  ROOKOUT_TOKEN: "<rookout-token>"
+  ROOKOUT_TOKEN: "c35531ec576abe10d107213bf0c7d6466098303229d20d738d56bab2c71a2cf9"
   RETRY: 10s
   TIMEOUT: 300s
 kind: ConfigMap
