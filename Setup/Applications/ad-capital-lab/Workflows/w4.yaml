@@ -26,11 +26,6 @@ phases:
   - type: K8S_PHASE_STEP
     name: Deploy
     steps:
-    - type: K8S_APPLY
-      name: Apply portal
-      properties:
-        filePaths: portal-deployment.yaml
-        stateTimeoutInMinutes: 10
     - type: K8S_DEPLOYMENT_ROLLING
       name: Rollout Deployment
     stepsInParallel: false
