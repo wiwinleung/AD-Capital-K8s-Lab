@@ -31,9 +31,8 @@ spec:
               name: mysecret
         - name: APPDYNAMICS_AGENT_ACCOUNT_NAME
           valueFrom:
-            secretKeyRef:
-              key: accountname
-              name: mysecret
+            fieldRef:
+              fieldPath: metadata.name
         - name: ROLE
           value: portal
         - name: APPDYNAMICS_AGENT_NODE_NAME
