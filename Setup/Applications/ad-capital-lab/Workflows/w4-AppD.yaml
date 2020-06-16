@@ -40,15 +40,11 @@ phases:
         comparisonStrategy: COMPARE_WITH_PREVIOUS
         executeWithPreviousSteps: false
         hostnameTemplate: ${instance.host.hostName}
-        templateExpressions:
-        - expression: ${AppDynamics_Tier}
-          fieldName: tierId
-          metadata:
-            entityType: APPDYNAMICS_TIERID
-            relatedField: ''
+        templateExpressions: null
         templateUuid: null
         templateVariables: null
         templateVersion: null
+        tierId: '13'
         timeDuration: '10'
     stepsInParallel: false
   - type: K8S_PHASE_STEP
@@ -77,10 +73,4 @@ rollbackPhases:
   provisionNodes: false
   serviceName: ad-capital-lab
   statefulSet: false
-templatized: true
-userVariables:
-- type: ENTITY
-  description: Variable for AppDynamics Tier entity in AppDynamics
-  fixed: false
-  mandatory: true
-  name: AppDynamics_Tier
+templatized: false
