@@ -18,9 +18,9 @@ notificationRules:
   - RL-WhRfOQQyBa9DrUjYFMQ
 phases:
 - type: KUBERNETES
-  computeProviderName: Kubernetes Cluster
+  computeProviderName: My Kubernetes Cluster
   daemonSet: false
-  infraDefinitionName: GKD
+  infraDefinitionName: GKS
   name: Rolling
   phaseSteps:
   - type: K8S_PHASE_STEP
@@ -43,9 +43,9 @@ phases:
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
-  computeProviderName: Kubernetes Cluster
+  computeProviderName: My Kubernetes Cluster
   daemonSet: false
-  infraDefinitionName: GKD
+  infraDefinitionName: GKS
   name: Rollback Rolling
   phaseNameForRollback: Rolling
   phaseSteps:

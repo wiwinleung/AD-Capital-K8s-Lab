@@ -4,6 +4,6 @@ cloudProviderType: KUBERNETES_CLUSTER
 deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
-  cloudProviderName: Kubernetes Cluster
+  cloudProviderName: My Kubernetes Cluster
   namespace: default
   releaseName: release-${infra.kubernetes.infraId}
